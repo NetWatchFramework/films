@@ -14,7 +14,7 @@ class Main extends React.Component{
 
     componentDidMount(){
         this.setState({loading: false})
-        fetch('http://www.omdbapi.com/?apikey=b641cc31')
+        fetch('https://www.omdbapi.com/?apikey=b641cc31')
             .then(response => response.json())
             .then(data => this.setState({movies: data.Search || [], 
                 loading: false, 
@@ -25,7 +25,7 @@ class Main extends React.Component{
         if (!str.trim()) return
         this.setState({loading: true})
 
-        fetch(`http://www.omdbapi.com/?apikey=b641cc31&s=${str}${type !== 'all' ? `&type=${type}` : ''}&page=${page}`)
+        fetch(`https://www.omdbapi.com/?apikey=b641cc31&s=${str}${type !== 'all' ? `&type=${type}` : ''}&page=${page}`)
             .then(response => response.json())
             .then(data => this.setState({movies: data.Search || [], 
                 loading: false, 
