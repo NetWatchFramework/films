@@ -1,0 +1,20 @@
+.card{
+    flex-basis: 300px;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 4px 2px #ccc;
+}
+
+.card img{
+    width: 260px;
+}
+
+.card div{
+    padding: 10px 20px;
+}
+
+.card p{
+    display: flex
+    ;justify-content: space-between;
+}
